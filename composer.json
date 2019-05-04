@@ -1,7 +1,13 @@
 {
-  "name": "jorijn/ynab-bunq-connector-bundle",
+  "name": "janmisker/ynab-bunq-connector-bundle",
   "description": "A Symfony 3.4 LTS compatible Bundle for uploading payments from the bunq Bundle to YNAB",
   "type": "library",
+  "repositories": [
+        {
+            "url": "https://github.com/JanMisker/symfony-bunq-bundle.git",
+            "type": "git"
+        }
+    ],
   "require": {
     "symfony/symfony": "3.4.*",
     "php": "^7.1",
