@@ -8,6 +8,7 @@
             "type": "git"
         }
     ],
+    "minimum-stability":"dev",
   "require": {
     "symfony/symfony": "3.4.*",
     "php": "^7.1",
