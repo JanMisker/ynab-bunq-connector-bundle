@@ -40,7 +40,7 @@ class MutationEventListener
         $payment = $event->getPayment();
         $accountId = $payment->getMonetaryAccountId();
         $amount = (float) $payment->getAmount()->getValue() * 1000;
-        $description = $payment->getDescription();
+        $description = substr($payment->getDescription(), 0, 99);
         $counterPartyName = $payment->getCounterpartyAlias()->getDisplayName();
         $date = (new \DateTime($payment->getCreated()))->format('Y-m-d');
 
